@@ -1,0 +1,13 @@
+.contributor-card {
+	width: 60vw;
+	padding: 24px;
+	border: 3px solid #fff;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.sub-title {
+	width: 60vw;
+	text-align: center;
+	margin: 4px 0;
+}

@@ -1,0 +1,103 @@
+.login-card {
+	background: rgb(0, 17, 36);
+	background: linear-gradient(
+			30deg,
+			rgba(0, 17, 36, 0.23546925606179976) 10%,
+			rgba(0, 255, 212, 0.1835417760855) 78%
+		),
+		linear-gradient(
+			125deg,
+			rgba(0, 16, 36, 0.23546925606179976) 10%,
+			rgba(0, 58, 163, 0.30095632002) 50%,
+			rgba(4, 254, 212, 0.7211835417760855) 48%
+		),
+		linear-gradient(
+			65deg,
+			rgba(0, 18, 36, 0.23546925606179976) 30%,
+			rgba(0, 60, 163, 0.2948530095632002) 5%,
+			rgba(2, 255, 212, 0.9211835417760855) 90%
+		),
+		linear-gradient(
+			15deg,
+			rgba(0, 15, 36, 0.23546925606179976) 3%,
+			rgba(0, 57, 163, 0.948530095632002) 50%,
+			rgba(0, 253, 212, 0.7211835417760855) 10%
+		);
+	display: grid;
+	grid-template-rows: auto 22vh 20vh;
+	margin: 25px auto;
+	height: 60vh;
+	width: 40vw;
+	border: 8px solid rgba(0, 255, 212, 0.7211835417760855);
+	border-radius: 5%;
+	box-shadow: 4px -1px 6px 2px #235, 4px 2px 7px 2px #255, -4px 2px 7px 2px #215;
+}
+
+.login-confirm {
+	letter-spacing: 0.85px;
+	width: 10vw;
+	height: 5vh;
+	border-radius: 5%;
+	border: none;
+	background: rgba(2, 73, 61, 0.842);
+	color: #fff;
+	font-size: 16px;
+}
+
+.login-confirm:hover {
+	background: rgba(1, 43, 36, 0.42);
+	cursor: pointer;
+	color: #111;
+}
+
+.login-forgot {
+	letter-spacing: 0.85px;
+	width: 12vw;
+	height: 3.25vh;
+	border-radius: 5%;
+	border: none;
+	background: rgba(2, 73, 61, 0.842);
+	color: #fff;
+	font-size: 16px;
+	padding: 8px auto;
+}
+
+.login-forgot:hover {
+	background: rgba(1, 43, 36, 0.42);
+	cursor: pointer;
+	color: #111;
+}
+
+.login-register {
+	letter-spacing: 0.85px;
+	width: 12vw;
+	height: 3vh;
+	border-radius: 5%;
+	border: none;
+	background: rgba(2, 73, 61, 0.842);
+	color: #fff;
+	font-size: 16px;
+	padding: 8px auto;
+}
+
+.login-register:hover {
+	background: rgba(1, 43, 36, 0.42);
+	cursor: pointer;
+	color: #111;
+}
+
+.login-credentials {
+	width: auto;
+}
+
+.buttons {
+	text-align: center;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	margin: 2%;
+}
