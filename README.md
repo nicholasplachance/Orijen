@@ -24,6 +24,6 @@ This open source project is perfect for any developer learning React or that kno
 
 ## Reactjs
 
-- Since this is an open-source, junior developer friendly, project I have created a [notes](./notes.md)
+- Since this is an open-source, junior developer friendly, project I have created a [notes](./Notes.md)
 - These notes can also be contributed to, whether it be clarifying a topic or adding new information
-- Create a pull request the same way and submit changes to [notes](./notes.md)
+- Create a pull request the same way and submit changes to [notes](./Notes.md)
