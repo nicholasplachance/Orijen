@@ -1,6 +1,5 @@
 import React from 'react';
 import './login-card.style.css';
-import { LoginInput } from '../login-input.component/login-input.component';
 import { LoginTitle } from '../login-title.component/login-title.component';
 
 export const LoginCard = ({ state, changeStatusTrue, changeStatusFalse }) => {
@@ -17,7 +16,14 @@ export const LoginCard = ({ state, changeStatusTrue, changeStatusFalse }) => {
 				}}
 			/>
 
-			<div className="login-credentials">{<LoginInput />}</div>
+			<div className="login-credentials">
+				<div className="login-input">
+					<label placeholder="Email/Username">email</label>
+					<input type="text" placeholder="email" />
+					<label placeholder="password">password</label>
+					<input type="password" placeholder="password" />
+				</div>
+			</div>
 			<div className="buttons">
 				<button
 					className="login-forgot"
@@ -36,15 +42,6 @@ export const LoginCard = ({ state, changeStatusTrue, changeStatusFalse }) => {
 					}}
 				>
 					sign in
-				</button>
-				<button
-					className="login-register"
-					onClick={() => {
-						changeStatusFalse();
-						console.log(state);
-					}}
-				>
-					register here
 				</button>
 			</div>
 		</div>

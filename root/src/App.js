@@ -21,18 +21,17 @@ class App extends Component {
 	}
 
 	render() {
-		if (this.state.isLoggedIn === true) {
-			return <h1>Hello World!</h1>;
-		}
 		return (
 			<div className="App">
 				<Header />
-				<ContributorList contributors={this.state.contributors} />
-				{/* <LoginCard
-					changeStatusTrue={() => this.setState({ isLoggedIn: true })}
-					changeStatusFalse={() => this.setState({ isLoggedIn: false })}
-					state={this.state}
-				></LoginCard> */}
+				<div className="flex-container">
+					<ContributorList contributors={this.state.contributors} />
+					<LoginCard
+						changeStatusTrue={() => this.setState({ isLoggedIn: true })}
+						changeStatusFalse={() => this.setState({ isLoggedIn: false })}
+						state={this.state}
+					></LoginCard>
+				</div>
 			</div>
 		);
 	}

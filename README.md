@@ -7,6 +7,7 @@ This open source project is perfect for any developer learning React or that kno
 
 - After forking repo if you plan to contribute or just cloning the repo for fun
 - Make sure to run an npm install inside ./root directory
+- To run this project make sure you are inside the ./root directory and run "npm start" from the terminal
 - After running this install all dependencies should work properly
 
 ## Contributing

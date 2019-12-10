@@ -7,3 +7,7 @@
 body {
 	background: rgba(24, 78, 224, 0.904);
 }
+
+.flex-container {
+	display: flex;
+}
