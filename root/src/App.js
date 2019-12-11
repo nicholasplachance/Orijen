@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { LoginCard } from './components/login.components/login-card.component/login-card.component';
+import { WelcomeCard } from './components/welcome.component/welcome-card.component/welcome-card.component';
 import { Header } from './components/header/header.component';
+import { Footer } from './components/footer/footer.component';
 import { ContributorList } from './components/contributors/contributor-list/contributor-list.component';
 class App extends Component {
 	constructor() {
@@ -21,6 +23,22 @@ class App extends Component {
 	}
 
 	render() {
+		if (this.state.isLoggedIn) {
+			return (
+				<div className="App">
+					<Header />
+					<div className="flex-container">
+						<ContributorList contributors={this.state.contributors} />
+						<WelcomeCard
+							changeStatusTrue={() => this.setState({ isLoggedIn: true })}
+							changeStatusFalse={() => this.setState({ isLoggedIn: false })}
+							state={this.state}
+						></WelcomeCard>
+					</div>
+					<Footer />
+				</div>
+			);
+		}
 		return (
 			<div className="App">
 				<Header />
@@ -32,6 +50,7 @@ class App extends Component {
 						state={this.state}
 					></LoginCard>
 				</div>
+				<Footer />
 			</div>
 		);
 	}

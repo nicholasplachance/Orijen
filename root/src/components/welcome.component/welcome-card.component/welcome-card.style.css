@@ -1,9 +1,15 @@
 .login-card {
 	background: rgb(0, 17, 36);
 	background: linear-gradient(
-			15deg,
+			30deg,
 			rgba(0, 17, 36, 0.23546925606179976) 10%,
 			rgba(0, 255, 212, 0.1835417760855) 78%
+		),
+		linear-gradient(
+			125deg,
+			rgba(0, 16, 36, 0.23546925606179976) 10%,
+			rgba(0, 58, 163, 0.30095632002) 50%,
+			rgba(1, 190, 159, 0.721) 48%
 		),
 		linear-gradient(
 			65deg,
@@ -12,19 +18,13 @@
 			rgba(3, 224, 188, 0.721) 90%
 		),
 		linear-gradient(
-			30deg,
+			15deg,
 			rgba(0, 15, 36, 0.23546925606179976) 3%,
 			rgba(0, 57, 163, 0.948530095632002) 50%,
 			rgba(6, 234, 188, 0.721) 10%
-		),
-		linear-gradient(
-			125deg,
-			rgba(0, 16, 36, 0.23546925606179976) 10%,
-			rgba(0, 58, 163, 0.30095632002) 50%,
-			rgba(1, 190, 159, 0.721) 48%
 		);
 	display: grid;
-	grid-template-rows: auto 22vh 20vh;
+	grid-template-rows: auto 25vh 20vh;
 	margin: 25px auto;
 	height: 60vh;
 	width: 40vw;
@@ -33,61 +33,22 @@
 	box-shadow: 4px -1px 6px 2px #235, 4px 2px 7px 2px #255, -4px 2px 7px 2px #215;
 }
 
-.login-confirm {
+.sign-out {
 	letter-spacing: 0.85px;
-	width: 10vw;
+	width: 12vw;
 	height: 5vh;
 	border-radius: 5%;
 	border: none;
 	background: rgba(2, 73, 61, 0.842);
 	color: #fff;
 	font-size: 16px;
-}
-
-.login-confirm:hover {
-	background: rgba(1, 43, 36, 0.42);
-	cursor: pointer;
-	color: #111;
-}
-
-.login-forgot {
-	letter-spacing: 0.85px;
-	width: 12vw;
-	height: 3.25vh;
-	border-radius: 5%;
-	border: none;
-	background: rgba(2, 73, 61, 0.842);
-	color: #fff;
-	font-size: 16px;
 	padding: 8px auto;
 }
 
-.login-forgot:hover {
+.sign-out:hover {
 	background: rgba(1, 43, 36, 0.42);
 	cursor: pointer;
 	color: #111;
-}
-
-.login-register {
-	letter-spacing: 0.85px;
-	width: 12vw;
-	height: 3vh;
-	border-radius: 5%;
-	border: none;
-	background: rgba(2, 73, 61, 0.842);
-	color: #fff;
-	font-size: 16px;
-	padding: 8px auto;
-}
-
-.login-register:hover {
-	background: rgba(1, 43, 36, 0.42);
-	cursor: pointer;
-	color: #111;
-}
-
-.login-credentials {
-	width: auto;
 }
 
 .buttons {
@@ -102,30 +63,24 @@ button {
 	margin: 2%;
 }
 
-.login-input {
+.welcome-list {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
 }
 
-.login-input input {
+.welcome-list li {
+	list-style: none;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: 600;
 	margin: 5%;
 	padding: 2%;
 	box-shadow: 1px -1px 3px 2px #235, -1px 1px 3px 2px #255;
 	border: none;
 }
 
-.login-input input::placeholder {
-	text-align: center;
-	font-size: 12px;
-	margin: 5%;
-	padding: 2%;
-}
-
-label {
-	text-align: center;
-	font-size: 18px;
-	font-weight: bolder;
+.welcome-list li:hover {
+	cursor: pointer;
+	background: rgba(250, 245, 250, 0.75);
 }

@@ -2,12 +2,30 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scrollbar-color: #333222;
+	scrollbar-face-color: #333222;
+	scrollbar-darkshadow-color: #333222;
+	scrollbar-width: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: #315659;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 255, 212, 0.1835417760855);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(1, 190, 159, 0.721);
 }
 
 body {
-	background: rgba(24, 78, 224, 0.904);
+	background: #315659;
 }
 
 .flex-container {
 	display: flex;
+	min-height: 90vh;
 }
