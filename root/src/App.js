@@ -5,6 +5,17 @@ import { WelcomeCard } from './components/welcome.component/welcome-card.compone
 import { Header } from './components/header/header.component';
 import { Footer } from './components/footer/footer.component';
 import { ContributorList } from './components/contributors/contributor-list/contributor-list.component';
+
+// AFTER ALL IMPORTS START CREATE CLASS APP THAT EXTENDS COMPONENT
+// USE CONSTRUCTOR TO SET UP CLASS AND HELP MANAGE STATE
+// SET THIS.STATE = TO AN OBJECT LITERAL
+// CREATE AN OBJECT CALLED CONTRIBUTORS THAT HOLDS AN ARRAY OF OBJECTS
+// EACH OBJECT SHOULD HAVE UNIQUE ID, NAME, FIELD, FROM: RESPECTIVE TO THE CONTRIBUTOR
+// CREATE A RENDER FUNCTION TO RETURN JSX INTO A USABLE COMPONENT
+// PASS IMPORTS INTO RENDER FUNCTION
+// USE IF STATEMENT TO PASS COMPONENTS DEPENDING ON THIS.STATE
+// EXPORT CLASS TO ALLOW USEABILITY
+
 class App extends Component {
 	constructor() {
 		super();
