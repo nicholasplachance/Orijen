@@ -70,6 +70,7 @@ button {
 }
 
 .welcome-list li {
+	color: #fff;
 	list-style: none;
 	text-align: center;
 	font-size: 20px;
@@ -81,6 +82,10 @@ button {
 }
 
 .welcome-list li:hover {
+	transition: 0.6s;
+	color: #111;
 	cursor: pointer;
 	background: rgba(250, 245, 250, 0.75);
+	box-shadow: 2px -3px 4px 4px rgb(33, 48, 78),
+		-3px 2px 4px 4px rgb(50, 124, 124);
 }
