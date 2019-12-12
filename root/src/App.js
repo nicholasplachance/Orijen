@@ -27,7 +27,15 @@ class App extends Component {
 					name: 'Nick LaChance',
 					field: 'Front-end Web Development',
 					from: 'St. Louis, MO'
-				}
+				},
+				
+				{
+					id: 2,
+					name: 'Ezra Rabinsky',
+					field: 'Front-end Web Development',
+					from: 'Cleveland, OH'
+				},
+				
 			],
 			isLoggedIn: false
 		};
